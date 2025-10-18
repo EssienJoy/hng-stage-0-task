@@ -71,5 +71,14 @@ class ProfileCard {
         );
     }
 }
+function optimizeImage() {
+    const img = document.querySelector('.profile-img');
+    img.src = 'images/profile-photo.jpg';
+}
 
-new ProfileCard();
+function init() {
+    optimizeImage();
+    new ProfileCard();
+}
+
+window.addEventListener('DOMContentLoaded', init);
