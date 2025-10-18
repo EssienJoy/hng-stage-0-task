@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HNG Internship Stage 0</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="script.js"></script>
+	</head>
+	<body>
+		<article class="root-container" data-testid="test-profile-card">
+			<div class="profile-container">
+				<img
+					data-testid="test-user-avatar"
+					src="images/profile-photo.jpg"
+					alt="user profile image" />
+			</div>
+
+			<section class="habits-container">
+				<div class="bio-container">
+					<div class="bio-date-name">
+						<h2 class="center" data-testid="test-user-name">Essien Joy</h2>
+						<p class="cur-date"></p>
+					</div>
+
+					<p class="center" data-testid="test-user-bio">
+						Frontend Developer & Digital Creator documenting her tech journey.
+					</p>
+				</div>
+
+				<div class="hobbies-dislikes-container">
+					<section class="hobbies-section">
+						<button id="hobbies-button">
+							<h3>Hobbies</h3>
+							<img
+								style="width: 1rem"
+								src="svg/eye-svgrepo-com.svg"
+								alt="LinkedIn icon" />
+						</button>
+
+						<ul class="hobbies-list hidden" data-testid="test-user-hobbies">
+							<li>Coding</li>
+							<li>Creating Content</li>
+						</ul>
+					</section>
+
+					<section class="dislikes-section">
+						<button id="dislikes-button">
+							<h3>Dislikes</h3>
+							<img
+								style="width: 1rem"
+								src="svg/eye-svgrepo-com.svg"
+								alt="LinkedIn icon" />
+						</button>
+
+						<ul class="dislike-list hidden" data-testid="test-user-dislikes">
+							<li>Cluttered Code</li>
+							<li>Slow Internet 😅</li>
+						</ul>
+					</section>
+				</div>
+
+				<nav>
+					<ul data-testid="test-user-social-links">
+						<li>
+							<a href="https://github.com/" target="_blank">
+								<img src="svg/github-svgrepo-com.svg" alt="Github icon" />
+							</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com/" target="_blank">
+								<img src="svg/linkedin-svgrepo-com.svg" alt="LinkedIn icon" />
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</article>
+	</body>
+</html>
